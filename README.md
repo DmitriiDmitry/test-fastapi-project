@@ -36,6 +36,10 @@ This is a learning project built with [FastAPI](https://fastapi.tiangolo.com/), 
 ### Testing
 - **Pytest**, **pytest-asyncio**: For unit and async integration testing.
 
+### Containerization
+- **Docker**: Used to package the service into an isolated container.
+- **Docker Compose**: Manages a multi-container setup, allowing the service to run alongside all required dependencies (e.g., database, redis, etc.) with a single command.
+
 ### Others
 - **HTTPX**, **httpcore**, **orjson**: For high-performance HTTP operations and JSON serialization.
 - **logging**, **python-json-logger**: Used for logging.
