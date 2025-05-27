@@ -82,7 +82,7 @@ This is a learning project built with [FastAPI](https://fastapi.tiangolo.com/), 
    Once everything is running, you can access the following in your browser:
 
    - **FastAPI app**: [http://localhost:7777](http://localhost:7777)
-   - **Flower (Celery monitoring)**: [http://localhost:5555](http://localhost:5555) *(if configured in `celery.sh`)*
+   - **Flower (Celery monitoring)**: [http://localhost:5555](http://localhost:5555)
    - **Prometheus**: [http://localhost:9090](http://localhost:9090)
    - **Grafana**: [http://localhost:3000](http://localhost:3000)
   
