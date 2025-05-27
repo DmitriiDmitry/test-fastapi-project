@@ -67,11 +67,30 @@ This is a learning project built with [FastAPI](https://fastapi.tiangolo.com/), 
     pip install -r requirements.txt
     ```
 
-4. **Run the app (development mode):**
+4. **Build and start the containers**:
+   Use Docker Compose to build and run all the services:
+   ```bash
+   docker-compose up --build
+   ```
+   This will:
+   - Build the FastAPI application image.
+   - Start containers for PostgreSQL, Redis, Celery worker, Flower dashboard, Prometheus, and Grafana.
+   - Start database migration automaticaly.
+   - Expose ports for the application and monitoring tools.
+  
+5. **Access the services**:
+   Once everything is running, you can access the following in your browser:
 
-    ```bash
-    uvicorn main:app --reload
-    ```
+   - **FastAPI app**: [http://localhost:7777](http://localhost:7777)
+   - **Flower (Celery monitoring)**: [http://localhost:5555](http://localhost:5555) *(if configured in `celery.sh`)*
+   - **Prometheus**: [http://localhost:9090](http://localhost:9090)
+   - **Grafana**: [http://localhost:3000](http://localhost:3000)
+  
+6. **Stop the services**:
+   Press `Ctrl+C` to stop the services gracefully, then run:
+   ```bash
+   docker-compose down
+   ```
 
 ---
 
