@@ -50,8 +50,8 @@ This is a learning project built with [FastAPI](https://fastapi.tiangolo.com/), 
 1. **Clone the repo:**
 
     ```bash
-    git clone https://github.com/yourusername/your-repo.git
-    cd your-repo
+    git clone https://github.com/DmitriiDmitry/test-fastapi-project.git
+    cd test-fastapi-project
     ```
 
 2. **Create and activate virtual environment:**
